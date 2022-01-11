@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/profile/static/css/main.2ac40a66.css",
+    "main.js": "/profile/static/js/main.d276ca3f.js",
+    "static/media/main-menu-bg.png": "/profile/static/media/main-menu-bg.2920d1b75b3ee4983e0b.png",
+    "static/media/EuclidCircularA-Medium.ttf": "/profile/static/media/EuclidCircularA-Medium.a5befbfcb71cd093cc56.ttf",
+    "static/media/EuclidCircularA-Regular.ttf": "/profile/static/media/EuclidCircularA-Regular.d54600880dc63db716f2.ttf",
+    "static/media/EuclidCircularA-SemiBold.ttf": "/profile/static/media/EuclidCircularA-SemiBold.ae11344face2a74d2042.ttf",
+    "static/media/EuclidCircularA-Bold.ttf": "/profile/static/media/EuclidCircularA-Bold.b4788f2f8f64a74fe6d6.ttf",
+    "static/media/EuclidCircularA-Light.ttf": "/profile/static/media/EuclidCircularA-Light.29f6c14f6218727ca4be.ttf",
+    "index.html": "/profile/index.html",
+    "main.2ac40a66.css.map": "/profile/static/css/main.2ac40a66.css.map",
+    "main.d276ca3f.js.map": "/profile/static/js/main.d276ca3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ac40a66.css",
+    "static/js/main.d276ca3f.js"
+  ]
+}
