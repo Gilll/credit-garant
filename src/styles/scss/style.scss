@@ -1,0 +1,414 @@
+@import "_set.scss";
+@import "_fonts.scss";
+@import "icons.scss";
+
+.App {
+  min-height: 100vh;
+  background-color: #F9F8FD;
+}
+
+header {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+  background: url(../../img/bg/main-menu-bg.png) no-repeat, linear-gradient(137.69deg, rgba(28, 28, 30, 0.8) 1.93%, #1C1C1E 97.65%);
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 26rem;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  a {
+    color: white;
+    transition: none;
+    &:hover {
+      color: white;
+      transition: none;
+    }
+  }
+}
+
+.menu-logo {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  margin-left: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  a:first-child {
+    position: relative;
+    top: -1rem;
+  }
+  a:last-child {
+    position: relative;
+    bottom: -1rem;
+  }
+}
+
+.main-menu {
+  &__item {
+    border-left: 0.5rem solid transparent;
+    padding-left: 2.5rem;
+    display: block;
+    &::before {
+      content: '';
+      display: none;
+      position: absolute;
+      width: 0.9rem;
+      height: 0.9rem;
+      background: url(../../img/bg/menu-active-top.png);
+      background-size: cover;
+      right: 0;
+      top: -0.9rem;
+    }
+    &::after {
+      content: '';
+      display: none;
+      position: absolute;
+      width: 0.9rem;
+      height: 0.9rem;
+      background: url(../../img/bg/menu-active-bot.png);
+      background-size: cover;
+      right: 0;
+      bottom: -0.9rem;
+    }
+    &.active {
+      color: #15162F;
+      border-color: white;
+      position: relative;
+      &::before {
+        display: block;
+      }
+      &::after {
+        display: block;
+      }
+      .main-menu__layout {
+        background-color: #F9F8FD;
+        span { font-weight: 600; }
+      }
+      svg {
+        path {
+          stroke: #15162F;
+        }
+      }
+    }
+  }
+  &__icon {
+    width: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__layout {
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 6rem;
+  }
+}
+
+.main-menu-more {
+  &__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2.5rem 3rem;
+  }
+  &__row {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 6rem;
+    border-radius: 1rem;
+    &--popup:hover {
+      background-color: #F4F3F9;
+      color: #15162F;
+      cursor: default;
+      svg {
+        path {
+          stroke: #15162F;
+        }
+      }
+    }
+  }
+  &__icon {
+    width: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__switch {
+    margin-left: 2rem;
+  }
+  &__active-mess {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #F4493C;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.left-red-Line {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  border-left: 3px solid #F4493C;
+  margin-left: -2px;
+  padding-left: 2.9rem;
+  font-weight: 600;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  line-height: 2.15rem;
+  padding-bottom: 4.5rem;
+  border-bottom: 1px solid #EBEBEB;
+  .left-red-Line {
+    margin-bottom: 4rem;
+  }
+  &__col {
+    width: 70rem;
+  }
+  &__title3 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+.partner-short {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  &__icon {
+    background-color: white;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2.2rem;
+    flex-shrink: 0;
+    img {
+      width: 4.2rem;
+      height: 5.4rem;
+    }
+  }
+  &__name {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+  }
+  &__desc {
+    font-size: 1.8rem;
+    line-height: 2.15rem;
+  }
+}
+
+.form-field {
+  padding: 3rem 0;
+  margin: 0 -1px;
+  .ant-select {
+    display: block;
+    .ant-select-arrow {
+      right: 2rem;
+    }
+    .ant-select-selector {
+      border-radius: 1rem !important;
+      background-color: transparent !important;
+      height: 6rem !important;
+      padding: 0 2rem !important;
+      border-color: rgba(21, 22, 47, 0.5) !important;
+    }
+    .ant-select-selection-item {
+      font-family: 'Euclid Circular A';
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 5.8rem !important;
+    }
+  }
+  &__row {
+    margin-bottom: 5rem;
+    &--flex {
+      display: flex;
+      justify-content: left;
+      .form-field__col4 {
+        margin-right: 4rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #878796;
+    margin-bottom: 1rem;
+  }
+  &__col4 {
+    width: calc(25% - 3rem);
+  }
+  .ant-radio-wrapper {
+    font-size: 1.8rem;
+    line-height: 2.15rem;
+    font-weight: 600;
+    font-family: "Euclid Circular A";
+    margin-right: 4rem;
+  }
+}
+
+body .ant-select-dropdown {
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+body .ant-select-item-option-content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  min-height: 4.5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-family: "Euclid Circular A";
+  padding: 0.5rem 0;
+  .with-desc {
+    .row {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    .desc {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      font-weight: 300;
+      margin-left: 2.5rem;
+      color: #8E8E9C;
+    }
+  }
+  .checkmark {
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: 1px solid rgba(21, 22, 47, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 1rem;
+    position: relative;
+    bottom: -0.1rem;
+    border: 0.4rem solid transparent;
+    margin-left: 1px;
+  }
+}
+
+.ant-select-item-option-selected {
+  .ant-select-item-option-content {
+    .checkmark {
+      background-color: #405DBE;
+      border-color: white;
+    }
+  }
+}
+
+.label-on-top {
+  padding-top: 1rem;
+  .form-field__col4 {
+    position: relative;
+  }
+  label {
+    position: absolute;
+    background-color: #F9F8FD;
+    left: 1rem;
+    top: -1rem;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #878796;
+  }
+}
+
+.form-field {
+  .ant-input-number-group-wrapper {
+    display: block;
+  }
+  .ant-input-number {
+    border-radius: 1rem !important;
+    border-color: rgba(21, 22, 47, 0.5);
+    background-color: transparent;
+    overflow: hidden;
+    line-height: 6rem;
+    font-family: "Euclid Circular A";
+    font-weight: 600;
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    .ant-input-number-handler-down-inner, .ant-input-number-handler-up-inner {
+      right: calc(50% - 6px);
+    }
+  }
+  .ant-input-number-input {
+    padding: 2rem;
+  }
+  .ant-input-number-handler-wrap {
+    width: 3.5rem;
+  }
+  .ant-checkbox-wrapper {
+    margin-right: 4rem;
+    font-size: 1.8rem;
+    line-height: 2.15rem;
+    font-weight: 600;
+    font-family: "Euclid Circular A";
+  }
+}
+
+.input-year {
+  .ant-input-number-group-addon {
+    position: absolute;
+    left: 4rem;
+    z-index: 2;
+    border: 0;
+    top: 1px;
+    height: 5.8rem;
+    line-height: 5.8rem;
+    font-family: "Euclid Circular A";
+    font-weight: 600;
+    font-size: 1.8rem;
+    background: transparent;
+  }
+}
+
+.input-part {
+  .ant-input-number-group-addon {
+    position: absolute;
+    right: 5rem;
+    width: auto;
+    z-index: 2;
+    border: 0;
+    top: 1px;
+    height: 5.8rem;
+    line-height: 5.8rem;
+    font-family: "Euclid Circular A";
+    font-weight: 400;
+    font-size: 1.6rem;
+    background: transparent;
+    color: rgba(21, 22, 47, 0.5);
+  }
+}
