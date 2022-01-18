@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/credit-garant/static/css/main.a34c6458.css",
-    "main.js": "/credit-garant/static/js/main.f2647163.js",
+    "main.css": "/credit-garant/static/css/main.4aea9040.css",
+    "main.js": "/credit-garant/static/js/main.cb6c3618.js",
     "static/media/main-menu-bg.png": "/credit-garant/static/media/main-menu-bg.2920d1b75b3ee4983e0b.png",
     "static/media/EuclidCircularA-Medium.ttf": "/credit-garant/static/media/EuclidCircularA-Medium.a5befbfcb71cd093cc56.ttf",
     "static/media/EuclidCircularA-Regular.ttf": "/credit-garant/static/media/EuclidCircularA-Regular.d54600880dc63db716f2.ttf",
@@ -9,11 +9,11 @@
     "static/media/EuclidCircularA-Bold.ttf": "/credit-garant/static/media/EuclidCircularA-Bold.b4788f2f8f64a74fe6d6.ttf",
     "static/media/EuclidCircularA-Light.ttf": "/credit-garant/static/media/EuclidCircularA-Light.29f6c14f6218727ca4be.ttf",
     "index.html": "/credit-garant/index.html",
-    "main.a34c6458.css.map": "/credit-garant/static/css/main.a34c6458.css.map",
-    "main.f2647163.js.map": "/credit-garant/static/js/main.f2647163.js.map"
+    "main.4aea9040.css.map": "/credit-garant/static/css/main.4aea9040.css.map",
+    "main.cb6c3618.js.map": "/credit-garant/static/js/main.cb6c3618.js.map"
   },
   "entrypoints": [
-    "static/css/main.a34c6458.css",
-    "static/js/main.f2647163.js"
+    "static/css/main.4aea9040.css",
+    "static/js/main.cb6c3618.js"
   ]
 }
