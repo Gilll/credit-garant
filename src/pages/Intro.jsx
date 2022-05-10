@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Intro = () => {
+    console.log('intro');
     return (
-        <div>
+        <div className="container">
             <div className="left-red-Line">Intro</div>
         </div>
     );

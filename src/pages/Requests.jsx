@@ -1,9 +1,11 @@
 import React from 'react';
+import RequestList from "../components/requests/RequestList";
 
 const Requests = () => {
     return (
-        <div>
-            <div className="left-red-Line">Requests</div>
+        <div className="container">
+            <div className="left-red-Line">Заявки</div>
+            <RequestList/>
         </div>
     );
 };
